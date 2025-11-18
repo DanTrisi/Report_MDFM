@@ -1,0 +1,17 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}%
+\contentsline {chapter}{\numberline {2}General statement of the client}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}General statement of the client’s dissatisfaction}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Product design specification (PDS)}{5}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Concept Selection}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Input Feeding System}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Retaining System}{8}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Cutting System}{8}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Splitting system}{9}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Vertical motion with hydraulic cylinder}{9}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Vertical motion with lever mechanism}{10}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Alternate motion with bidirectional mask}{10}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Traditional splitting system with translating mask}{11}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.4.5}Concept evaluation with Decision Matrix}{11}{subsection.3.4.5}%
+\contentsline {chapter}{\numberline {4}Core specification Selection}{13}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Conclusion}{15}{chapter.5}%

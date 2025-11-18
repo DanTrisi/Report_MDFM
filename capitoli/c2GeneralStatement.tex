@@ -15,6 +15,9 @@ So, our goal is to try to fix these issues; in particular, the core of the proje
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 
+\begingroup
+\setlength{\emergencystretch}{3em} % allow extra stretch to avoid underfull hbox
+
 \begin{longtable}{@{}p{0.8cm}p{8cm}M{6cm}P{1.5cm}@{}}
 \caption{Product Design Specification – Firewood Cut \& Split Machine} \\
 \toprule

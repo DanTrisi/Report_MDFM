@@ -1,9 +1,4 @@
-The core specification that we need to take into account when designing our cutting system is the splitting force required to perform such task.
-
 To do so, we built a small dataset collecting with other manufacturers data and then, using a simple linear polynomial fit, we interpolated it with our dimensions in order to have our splitting force target.
-
-\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
-\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
 
 \begin{longtable}{@{}p{3.5cm}p{3.3cm}M{3.3cm}P{3.5cm}@{}}
 \caption{Manufacturers data used to interpolate our splitting force target} \\
@@ -47,7 +42,7 @@ Amix & 450 & 550 & 133 \\[1pt]
     \hfill
 \end{figure}
 
-Based on that, and using the following code in $\mathbf{Rstudio}$
+Based on that, and using the following code in \textbf{RStudio}
 
 \lstset{
   basicstyle=\ttfamily\small,
@@ -73,7 +68,5 @@ predict(data.lm, newdata = our_chunk)
 
 our splitting force resulted in
 
-$$
-\mathbf{Splitting \; force} = 166 \math{kN}
-$$
+\textbf{Splitting force} = 166 kN
 
