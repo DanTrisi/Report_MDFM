@@ -1,0 +1,259 @@
+
+%=====================================================================================================================
+%Paolo
+%=====================================================================================================================
+
+Although the project focuses mainly on the splitting stage, several possible concepts for the overall Cut\&Split machine are presented below. In particular, the system can be divided into the following subsystems:
+\begin{itemize}
+    \item Input Feeding System;
+    \item Retaining System;
+    \item Cutting System;
+    \item Split Actuator System.
+\end{itemize}
+
+\section{Input Feeding System}
+
+The aim of this first stage is to load the machine with a workable log. To achieve this, two alternative approaches are proposed:
+
+\begin{itemize}
+    \item A set of toothed rollers, where one roller is directly driven by a motor while the remaining rollers are actuated through a chain transmission (Figure~\ref{fig:tooth_rollers});
+    \item A chain conveyor equipped with teeth to ensure adequate grip on the log, with the chain tensioned between a drive and a driven pinion (Figure~\ref{fig:chain_conveyor}).
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[b]{0.35\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Immagini/toothed_rollers.png}
+        \caption{Toothed rollers}
+        \label{fig:tooth_rollers}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Immagini/chain_conveyor.png}
+        \caption{Chain conveyor}
+        \label{fig:chain_conveyor}
+    \end{minipage}
+\end{figure}
+
+%========= Alberto ====================
+\section{Retaining System}
+In order to stabilize the log during the cutting stage of the process, a retainer system is needed. Two possible designs are presented here:
+\begin{itemize}
+    \item a toothed roller retainer (Figure~\ref{fig:tooth_rollers_ret}), which is a smaller dimension-version of the toothed roller previously presented. At this stage however, it is mounted on a fixed arm with a set of springs; the aim is pushing  the log against the ground to stabilize it while the cut occurs. This mechanism allows different log's diameters because it adapts to different heights instantaneously;
+    \item a retainer arm (Figure~\ref{fig:ret_arm}), which is the most used system nowadays. This mechanism also allows different diameters, but it has a higher positioning time compared to the previous one, since it requires an external actuator to complete this task. 
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[b]{0.35\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Immagini/ToothedRoller.jpeg}
+        \caption{Toothed roller retainer}
+        \label{fig:tooth_rollers_ret}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Immagini/RetainerArm.jpeg}
+        \caption{Retainer arm}
+        \label{fig:ret_arm}
+    \end{minipage}
+\end{figure}
+
+
+
+%=============================dfdf========================================================================================
+%Daniele
+%=====================================================================================================================
+\section {Cutting System}
+
+In order to cut the log into small chunks, a cutting system is required. Two concepts are proposed: 
+\begin{itemize}
+    \item A chainsaw bar that moves around a pivot (Figure~\ref{fig:chainsaw});
+    \item A circular saw that moves with liner and horizontal motion (Figure~\ref{fig:circularSaw}).
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[b]{0.40\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Immagini/Chainsaw.PNG}
+        \caption{Chainsaw sketch}
+        \label{fig:chainsaw}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.40\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Immagini/CircularSaw.PNG}
+        \caption{Circular saw sketch}
+        \label{fig:circularSaw}
+    \end{minipage}
+\end{figure}
+
+\section{Splitting system}
+
+This part of the overall system is the main aim of our design, as previously stated. The task of this subsystem is to split the wood chunks into small pieces of firewood. Four concepts are developed; here we briefly explain the most important features and then, with aid of a decision matrix, we will choose the most suitable one. 
+
+\subsection{Vertical motion with hydraulic cylinder}
+
+In this system (Figure~\ref{fig:Concept1}), a conveyor belt moves the wood chunks forward. In order to split chunks, they must have the flat surface resting on the belt; thus, an overturning system is necessary to ensure the correct positioning of the chunks. A hydraulic cylinder actuates the mask, which is shaped in a cross shape. Several squeezes are necessary to completely split a chunk, but resulting shapes are mainly parallelepipeds with constant cross-area. When the cylinder is moving, the belt must remain still. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{Immagini/concept1.png}
+    \caption{Sketch of the Concept 1}
+    \label{fig:Concept1}
+\end{figure}
+
+\subsection{Vertical motion with lever mechanism}
+
+This system (Figure~\ref{fig:Concept2}) is quite similar to the previous one, however, instead of using a hydraulic cylinder, a mechanical mechanism is used. This results in a faster system then the previous one, because the belt can also continue his motion during the split time. Moreover, for that reason, it requires less mechatronics control.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{Immagini/concept4.png}
+    \caption{Sketch of the Concept 2}
+    \label{fig:Concept2}
+\end{figure}
+
+\subsection{Alternate motion with bidirectional mask}
+
+This system (Figure~\ref{fig:Concept3}) consists of a mask that can cut in both directions. The mask is moved by four power screws. When the chunk is split, the bottom of the system opens in order to unload the pieces of firewood. This system could be quite fast because it reduces dead times but the resulting shapes aren't really constant and even. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{Immagini/concept2.png}
+    \caption{Sketch of the Concept 3}
+    \label{fig:Concept3}
+\end{figure}
+
+\subsection{Traditional splitting system with translating mask}
+
+This system (Figure~\ref{fig:Concept4}) is the most traditional, but instead of using a fixed mask as in the product currently in the market, a different mask rack is used. This can move up and down and ensures constant and even dimensions of the final product. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\linewidth]{Immagini/concept3.png}
+    \caption{Sketch of the Concept 4}
+    \label{fig:Concept4}
+\end{figure}
+
+\subsection{Concept evaluation with Decision Matrix}
+
+To support the selection of the most suitable concept for the splitting system, a decision matrix was developed to compare the four proposed design alternatives in a structured and quantitative manner. Each concept was evaluated against a set of criteria identified as relevant for the intended application, including processing time, reliability, flexibility of the output shape, and the range of acceptable workpiece dimensions.
+
+Since several of these criteria are qualitative in nature, a qualitative-to-numeric conversion table (Table~\ref{tab: QualitativeToNumeric} was adopted to ensure consistency across evaluations. The qualitative levels (“Great”, “Good”, “Okay”, “Fair”, “Poor”) were mapped to numerical scores ranging from 10 to 2, allowing them to be integrated into the weighted scoring process of the matrix. This approach ensures that both objective measurements and subjective engineering judgments contribute transparently to the final assessment.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{l c}
+\toprule
+\textbf{Qualitative Level} & \textbf{Numeric Score} \\
+\midrule
+Great & 10 \\
+Good & 8 \\
+Okay & 6 \\
+Fair & 4 \\
+Poor & 2 \\
+\bottomrule
+\end{tabular}
+\caption{Qualitative-to-numeric conversion table used in the Decision Matrix.}
+\label{tab: QualitativeToNumeric}
+\end{table}
+
+The results of the decision matrix (Table~\ref{tab:decisionMatrix}) indicate that Concept 1 (vertical motion with hydraulic cylinder) provides the best trade-off between performance, reliability, and operational flexibility, therefore suggesting it as the preferred design option.
+
+
+\begin{sidewaystable}
+\centering
+\small
+
+% ------------------- HEADER BLOCK 1 -------------------
+\textbf{\Large Comparison Block 1: Vertical Motion Concepts}
+
+\vspace{0.4cm}
+
+\begin{tabular}{%
+>{\raggedright}m{4cm} c
+>{\raggedright}m{3cm} c c c c c c}
+\toprule
+\textbf{Objective} & \textbf{Weight Factor} & \textbf{Parameter} & \multicolumn{3}{c}{\textbf{Vertical: Hydraulic Cylinder}} & \multicolumn{3}{c}{\textbf{Vertical: Lever}} \\
+\cmidrule(lr){4-6} \cmidrule(lr){7-9} & & & Mag & Score & Value & Mag & Score & Value \\
+\midrule
+
+Time for splitting 70cm chunk  
+& 0.20 & s & 24 & 1 & 0.20 & 24 & 1 & 0.20 \\
+
+Likeness to parallelepiped shape
+& 0.05 & Qualitative & Good & 8 & 0.40 & Good & 8 & 0.40 \\
+
+Envelope dimensions
+& 0.05 & m×m×m & 0.9×1.2×0.9 & 3 & 0.20 & 0.9×1.2×3 & 1 & 0.10 \\
+
+Reliability
+& 0.15 & Experience & Great & 10 & 1.50 & Poor & 2 & 0.30 \\
+
+Output shape flexibility
+& 0.35 & Qualitative & Great & 10 & 3.50 & Good & 8 & 2.80 \\
+
+Flexibility on processable diameters
+& 0.10 & cm & 10 & 5 & 0.50 & 10 & 5 & 0.50 \\
+
+Flexibility on processable lengths
+& 0.10 & cm & 5 & 1.5 & 0.20 & 10 & 3 & 0.30 \\
+
+\midrule
+\textbf{Overall value} & \textbf{1} & -- & && \textbf{6.3} & & &\textbf{4.5} \\
+
+\bottomrule
+\end{tabular}
+
+\vspace{1.2cm}
+
+% ------------------- HEADER BLOCK 2 -------------------
+\textbf{\Large Comparison Block 2: Alternative Splitting Concepts}
+
+\vspace{0.4cm}
+
+\begin{tabular}{%
+>{\raggedright}m{4cm} c
+>{\raggedright}m{3cm} c c c c c c}
+\toprule
+\textbf{Objective} & \textbf{Weight} & \textbf{Parameter} & \multicolumn{3}{c}{\textbf{Bidirectional Mask}} & \multicolumn{3}{c}{\textbf{Translating Mask}} \\
+\cmidrule(lr){4-6} \cmidrule(lr){7-9}
+ & & & Mag & Score & Value & Mag & Score & Value \\
+\midrule
+
+Time for splitting 70cm chunk  
+& 0.20 & s & 3 & 8 & 1.60 & 4 & 6 & 1.20 \\
+
+Likeness to parallelepiped shape
+& 0.05 & Qualitative & Fair & 4 & 0.20 & Fair & 4 & 0.20 \\
+
+Envelope dimensions
+& 0.05 & m×m×m & 0.75×0.75×0.3 & 15 & 0.80 & 0.75×0.75×0.3 & 15 & 0.80 \\
+
+Reliability
+& 0.15 & Experience & Okay & 6 & 0.90 & Great & 10 & 1.50 \\
+
+Output shape flexibility
+& 0.35 & Qualitative & Poor & 2 & 0.70 & Okay & 6 & 2.10 \\
+
+Flexibility on processable diameters
+& 0.10 & cm & 2 & 1 & 0.10 & 2 & 1 & 0.10 \\
+
+Flexibility on processable lengths
+& 0.10 & cm & 3 & 0.9 & 0.10 & 3 & 0.9 & 0.10 \\
+
+\midrule
+\textbf{Overall value} & \textbf{1} & -- & & & \textbf{3.8} & && \textbf{5.4} \\
+\bottomrule
+\end{tabular}
+
+\caption{Split System Decision Matrix}
+\label{tab:decisionMatrix}
+
+\end{sidewaystable}

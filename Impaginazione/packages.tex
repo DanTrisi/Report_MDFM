@@ -1,0 +1,102 @@
+% generali
+\usepackage{xurl}  
+\usepackage[utf8]{inputenc}
+
+\usepackage[a4paper,margin=2.5cm]{geometry}
+
+\usepackage[italian,english]{babel}
+\usepackage{csquotes}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[svgnames]{xcolor}
+\usepackage{comment}
+\usepackage{setspace}
+\usepackage{appendix}
+\usepackage[hidelinks]{hyperref}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{url} 
+\usepackage{booktabs}
+\usepackage{longtable}
+%\usepackage{lmodern} % Load modern fonts for better font support
+
+\usepackage{rotating}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{booktabs}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{siunitx} %tabelle con colonne di solo numeri
+\usepackage{hyperref}
+\usepackage{adjustbox}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+
+
+
+
+%\usepackage[9-15]{pagesel}
+% attenzione: la filigrana in prima pagina ha opacità massima con questa opzione attivata
+% non mettendo la prima pagina comunque appare draft in background
+
+%matematica
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{amssymb}
+%\usepackage{physics}
+\usepackage{braket}
+
+% prima pagina
+\usepackage{frontespizio}
+\usepackage{tikz}
+%\usepackage[pages=some]{background}
+
+% linea sopra le pagine
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}   % Titolo del capitolo o sezione in alto a sinistra
+\fancyhead[R]{\rightmark}  % (opzionale, spesso lo stesso di sopra)
+\fancyfoot[C]{\thepage}    % Numero pagina centrato in basso
+
+
+
+% bibliografia
+%\usepackage[backend=biber,style=ieee,sorting=none,url=true,doi=false,isbn=false,eprint=false]{biblatex}
+%\addbibresource{TesiTriennale.bib}
+
+%\usepackage{etoolbox}
+%\appto\bibsetup{\sloppy}
+
+% abstract
+\renewenvironment{abstract}%
+    {\cleardoublepage%
+        \thispagestyle{empty}%
+        \null \vfill\begin{center}%
+            \bfseries \abstractname \end{center}}%
+        {\vfill\null}
+\addto\captionsitalian{%
+  \renewcommand{\abstractname}{Abstract}%
+}
+
+% indice analitico
+\usepackage{imakeidx}
+\makeindex
+
+
+
+
+
+
+
+
+
+

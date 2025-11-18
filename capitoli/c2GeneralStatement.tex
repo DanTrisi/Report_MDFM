@@ -1,0 +1,111 @@
+\section{General statement of the client’s dissatisfaction}
+The machines currently available on the market require the constant presence of an operator, 
+are not very flexible, and are relatively slow in operation.
+
+The machines currently available on the market are relatively slow in processing a log in input into the final chunk; not very flexible in terms of allowed log diameters in input (there is little possibility to change the diameter once the machine is switched on), and finally they need the presence of an operator in order for them to perform the process. 
+
+So, our goal is to try to fix these issues; in particular, the core of the project will be focused on automatizing the entire firewood processor and finding a solution that allows to adjust the working log diameter in real time.
+
+\section{Product design specification (PDS)}
+
+%================================================================================================================
+%INIZIO TABELLA PDS
+%================================================================================================================
+
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\begin{longtable}{@{}p{0.8cm}p{8cm}M{6cm}P{1.5cm}@{}}
+\caption{Product Design Specification – Firewood Cut \& Split Machine} \\
+\toprule
+\textbf{N°} & \textbf{Product Design Specification} & \textbf{Value} & \textbf{R/D} \\
+\midrule
+\endfirsthead
+
+\multicolumn{4}{c}{{\bfseries Table \thetable\ (continued)}} \\
+\toprule
+\textbf{N°} & \textbf{Product Design Specification} & \textbf{Value} & \textbf{R/D} \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{4}{r}{{Continued on next page}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+% =======================
+\textbf{1}. & \multicolumn{3}{l}{\textbf{Geometry}} \\
+\midrule
+1.1 & Input length of the log                & $4^{+1}_{-3}\,m$               & R \\[1pt]
+1.2 & Maximum workable diameter of input log & $70^{+5}_{-5}\,cm$             & R \\[1pt]
+1.3 & Output length of firewood stick        & $25^{+1}_{-1}\,cm$             & R \\[1pt]
+1.4 & Output geometry of firewood stick      & Approximately parallelepiped   & D \\[1pt]
+1.5 & Mean output area of firewood stick     & $60^{+20}_{-20}\,cm^2$         & R \\[3pt]
+
+% =======================
+\midrule
+\textbf{2}. & \multicolumn{3}{l}{\textbf{Kinematics}} \\
+\midrule
+
+2.1  & Easy and economic accessories substitution    & Commercial standard parts             & D \\[1pt]
+
+\multicolumn{4}{l}{\textbf{Cutting system}} \\[1pt]
+2.21 & Cutting time (Ø70 cm fir wood)                & $15^{+2}_{-2}\,s$                     & D \\[1pt]
+2.22 & Clamping force                                & $\ge \text{ saw force [N]}$           & R \\[1pt]
+2.23 & Clamping speed (to be included in cycle time) & As fast as possible [mm/s]            & D \\[1pt]
+2.24 & Cycle until maintenance                       & To be defined after design            & --\\[3pt]
+
+\multicolumn{4}{l}{\textbf{Splitting system}} \\[1pt]
+2.31 & Splitting speed                               & $130^{+20}_{-20}\,\mathrm{mm/s}$             & D \\[1pt]
+--   & Splitting time (alternative to speed)         & -                                            & -- \\[1pt]
+2.32 & Return speed                                  & As fast as possible [mm/s]                   & D \\[1pt]
+2.33 & Splitting force                               & $150000^{+\infty}_{-0}\,N$                   & R \\[1pt]
+--   & Max wood density (alternative to force)       & -                                            & -- \\[1pt]
+--   & Cycle until maintenance                       & To be defined after design [\#cycles]        & -- \\[3pt]
+
+\multicolumn{4}{l}{\textbf{Input feeding system}} \\[1pt]
+2.41 & Advancement speed                             & $26^{+10}_{-2}\,\mathrm{cm/s}$                 & R \\[3pt]
+
+2.5 & Cycle time                                     & As short as possible [s]                       & D \\[1pt]
+2.6 & Production rate                                & $10^{+5}_{-2}\,\mathrm{m^3/h}$                 & D \\[3pt]
+
+% =======================
+\midrule
+\textbf{3}. & \multicolumn{3}{l}{\textbf{Energy}} \\
+\midrule
+3.1 & Power supply                                   & Three-phase $480\, V, 50 \,Hz  $            & R \\[3pt]
+
+% =======================
+\midrule
+\textbf{4}. & \multicolumn{3}{l}{\textbf{Material}} \\
+\midrule
+4.1 & Environmental resistance                       & To be confirmed with supervisor                        & D \\[1pt]
+4.2 & Shock resistance of input feeding system       & Horizontal fall from 1 m of Ø70 cm log without yielding & R \\[3pt]
+
+% =======================
+\midrule
+\textbf{6}. & \multicolumn{3}{l}{\textbf{Terms of Use}} \\
+\midrule
+6.2 & Fully automatic & \text{–} & D \\[1pt]
+6.21 & Number of human actions after being loaded & $0^{+0}_{-0}$ & R \\[3pt]
+
+\end{longtable}
+
+%================================================================================================================
+%FINE TABELLA PDS
+%================================================================================================================
+
+
+
+
+\subsection*{Sources}
+\begin{itemize}
+    \item \url{https://wolferidgemfg.com/product/japa-505-pro-firewood-processor/}
+    \item \url{https://cordking.ca/products/cs-series-log-processor/}
+    \item \url{https://www.dyna-products.com/firewood-processors/}
+    \item \url{https://forestnet.com/tech-review-firewood-processors/}
+    \item \url{https://bilthardusa.com/pages/how-many-tons-of-force-do-you-need-in-a-log-splitter/}
+    \item \url{https://www.saettastore.it/13-combinate}
+\end{itemize}

@@ -1,0 +1,79 @@
+The core specification that we need to take into account when designing our cutting system is the splitting force required to perform such task.
+
+To do so, we built a small dataset collecting with other manufacturers data and then, using a simple linear polynomial fit, we interpolated it with our dimensions in order to have our splitting force target.
+
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+\begin{longtable}{@{}p{3.5cm}p{3.3cm}M{3.3cm}P{3.5cm}@{}}
+\caption{Manufacturers data used to interpolate our splitting force target} \\
+\toprule
+\textbf{Manufacturer} & \textbf{Maximum log diameter (mm)} & \textbf{Maximum log length (mm)} & \textbf{Maximum splitting force (kN)} \\
+\midrule
+\endfirsthead
+
+\multicolumn{4}{c}{{\bfseries Table \thetable\ (continued)}} \\
+\toprule
+\textbf{N°} & \textbf{Product Design Specification} & \textbf{Value} & \textbf{R/D} \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{4}{r}{{Continued on next page}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+% ====== 8 example rows to fill in ======
+Rabaud & 800 & 500 & 143 \\[1pt]
+Varimatic & 300 & 550 & 62.3 \\[1pt]
+Brugger & 500 & 600 & 267 \\[1pt]
+FuelWood & 800 & 1000 & 151 \\[1pt]
+Bizon-Ins & 380 & 550 & 142 \\[1pt]
+Amix & 450 & 550 & 133 \\[1pt]
+
+
+\end{longtable}
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[b]{0.7\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Immagini/Splitting_force.png}
+        \caption{Collected data from other manufacturers to evaluate our splitting force}
+        \label{fig:splitforce}
+    \end{minipage}
+    \hfill
+\end{figure}
+
+Based on that, and using the following code in $\mathbf{Rstudio}$
+
+\lstset{
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue},
+  commentstyle=\color{gray},
+  stringstyle=\color{red},
+  breaklines=true,
+  frame=single
+}
+
+\begin{lstlisting}[language=R]
+data.lm <- lm(split_force ~ poly(max_d, 1, raw = T) + poly(max_l, 1, raw = T), data = df)
+summary(data.lm)
+df %>% 
+  add_predictions(data.lm)
+
+our_chunk <- tibble(
+  max_d = 700,
+  max_l = 250
+)
+predict(data.lm, newdata = our_chunk)
+\end{lstlisting}
+
+our splitting force resulted in
+
+$$
+\mathbf{Splitting force} = 166 \textbf{kN}
+$$
+
